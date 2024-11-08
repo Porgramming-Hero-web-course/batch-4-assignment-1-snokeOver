@@ -2,8 +2,8 @@
 
 # Assignment 1
 
-### Solution of Problems (1 - 8) are located in <mark> src </mark> folder
+- [x] Solution of Problems (1 - 8) are located in <mark> src </mark> folder
 
-### <mark> Blog-2 </mark> is located in the <mark> blog </mark> folder
+- [x] <mark> Blog-2 </mark> is located in the <mark> blog </mark> folder
 
-### There is an additional file <mark> test.ts </mark> in <mark> src </mark> folder for testing
+- [x] There is an additional file <mark> test.ts </mark> in <mark> src </mark> folder for testing
