@@ -13,5 +13,7 @@
     return wordCount;
   };
 
+  // Testing
+
   console.log(countWordOccurrences("I love typescript", "typescript"));
 }

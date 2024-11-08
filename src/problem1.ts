@@ -7,5 +7,7 @@
     return arr.reduce((sum, currVal) => sum + currVal, 0);
   };
 
+  // Testing
+
   console.log(sumArray([1, 2, 3, 4, 5]));
 }
