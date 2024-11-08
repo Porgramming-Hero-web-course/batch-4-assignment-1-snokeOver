@@ -49,3 +49,49 @@ fetchData()
 ```
 
 This example demostrate how <mark> Promises </mark> improve readability but when dealing with complex logic chaining multiple <mark> .then() </mark> methods can become verbose. Even we also have to manage catch blocks for error handling.
+
+### 2. <mark> async/await </mark> : Clean, Simple, and Readable
+
+Among all asynchronous operation handlers <mark> async/await </mark> is a more modern and cleaner way to handle asynchronous operations. It allows us to write asynchronous code in a synchronous-like manner, improving readability and making error handling easier.
+
+As An async function always returns a promise, within that function we can use the await keyword to pause execution of other instructions until the promise resolves.
+
+The following example will demonstrate a simple asynchronous operation using <mark> async/await </mark> :
+
+```
+const fetchData = (): Promise<string> => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data fetched");
+    }, 1000);
+  });
+}
+
+const getData = () => {
+  try {
+    const data = await fetchData();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getData();
+
+```
+
+### Benefits of <mark> async/await </mark> in TypeScript
+
+- [x] **_TypeScript Integration_**: <mark> async/await </mark> works seamlessly with TypeScript. You can leverage TypeScript’s type-checking features to ensure that the data returned from asynchronous functions is properly typed, reducing runtime errors.
+
+- [x] **_Less Boilerplate_**: Compared to promises, <mark> async/await </mark> reduces the need for excessive <mark> .then() </mark> and <mark> .catch() </mark> chaining, making your code more concise and clean.
+
+- [x] **_Simplicity and Readability_**: Asynchronous code looks and behaves more like synchronous code, which makes it easier to understand, maintain, and debug.
+
+- [x] **_Error Handling_**: With <mark> async/await </mark>, error handling is simplified using <mark> try/catch </mark> blocks, similar to synchronous code, instead of chaining <mark> .catch() </mark> methods.
+
+---
+
+While callbacks and promises are still widely used, <mark> async/await </mark> provides a cleaner, more readable, and less error-prone way to handle asynchronous operations in TypeScript. By using <mark> async/await </mark>, you can write asynchronous code that looks and behaves like synchronous code, reducing boilerplate and making your code easier to maintain.
+
+In TypeScript, the benefits are even greater as you can take advantage of static typing to ensure that your asynchronous operations are well-defined, improving code quality and reducing runtime errors.
