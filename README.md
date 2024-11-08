@@ -2,6 +2,8 @@
 
 # Assignment 1
 
+## Important Directions
+
 - [x] Solution of Problems (1 - 8) are located in <mark> src </mark> folder
 
 - [x] <mark> Blog-2 </mark> is located in the <mark> blog </mark> folder
